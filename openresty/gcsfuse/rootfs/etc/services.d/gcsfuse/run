@@ -1,0 +1,2 @@
+#!/usr/bin/with-contenv sh
+gcsfuse --foreground --debug_gcs --stat-cache-ttl "1h" --type-cache-ttl "1h" --limit-bytes-per-sec "-1" --limit-ops-per-sec "-1" -o ro,allow_other $GCSFUSE_OPTIONS $GOOGLE_CLOUD_STORAGE_BUCKET /usr/share/nginx/html
